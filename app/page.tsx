@@ -16,7 +16,7 @@ const chemistrySpeakers = [
   },
   {
     name: "Sarang S",
-    affiliation: "PhD, University of Souther California",
+    affiliation: "PhD, University of Southern California",
     field: "Helium Nano-Droplets",
     image: "/speakers/Sarang.png",
   },
