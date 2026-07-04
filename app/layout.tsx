@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bose-summer-school.vercel.app"),
+
   title: "S. N. Bose Summer School",
   description:
     "Annual online summer school introducing undergraduate students to cutting-edge research in Physics and Chemistry.",
@@ -23,16 +25,17 @@ export const metadata: Metadata = {
       "Annual online summer school introducing undergraduate students to cutting-edge research in Physics and Chemistry.",
     url: "https://bose-summer-school.vercel.app",
     siteName: "S. N. Bose Summer School",
+    type: "website",
+    locale: "en_US",
+
     images: [
       {
-        url: "/SNBose_Web.png",
+        url: "https://bose-summer-school.vercel.app/SNBose_Web.png",
         width: 1200,
         height: 630,
         alt: "S. N. Bose Summer School",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
@@ -40,21 +43,23 @@ export const metadata: Metadata = {
     title: "S. N. Bose Summer School",
     description:
       "Annual online summer school introducing undergraduate students to cutting-edge research in Physics and Chemistry.",
-    images: ["/SNBose_Web.png"],
+
+    images: [
+      "https://bose-summer-school.vercel.app/SNBose_Web.png",
+    ],
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}`}
-    >
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
