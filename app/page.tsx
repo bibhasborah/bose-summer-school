@@ -156,7 +156,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                Physics Lectures • Career Talk • Student Interaction
+                TBD
               </p>
             </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                Chemistry Lectures • Research Showcase • Panel Discussion
+                TBD
               </p>
             </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                Graduate School Session • Closing Ceremony
+                TBD
               </p>
             </div>
 
