@@ -4,7 +4,7 @@ const hosts = [
     name: "Bibhas Borah",
     affiliation: "PhD, University of Southern California",
     role: "Host",
-    image: "/hosts/Bibhas.jpg",
+    image: "/hosts/bibhas.jpg",
   },
 ];
 const chemistrySpeakers = [
