@@ -1,5 +1,64 @@
 import { FaArrowRight } from "react-icons/fa";
-
+const hosts = [
+  {
+    name: "Bibhas Borah",
+    affiliation: "PhD, University of Southern California",
+    role: "Host",
+    image: "/hosts/Bibhas.jpg",
+  },
+];
+const chemistrySpeakers = [
+  {
+    name: "Sumit Sahu",
+    affiliation: "PhD, University of Southern California",
+    field: "Molecular Spectroscopy",
+    image: "/speakers/Sumit.png",
+  },
+  {
+    name: "Sarang S",
+    affiliation: "PhD, University of Souther California",
+    field: "Helium Nano-Droplets",
+    image: "/speakers/Sarang.png",
+  },
+  {
+    name: "Katyayini Mishra",
+    affiliation: "PhD, Ruhr University, Germany",
+    field: "Halogen and Chalcogen Bonding Based Organocatalysis",
+    image: "/speakers/Katyayini.png",
+  },
+  {
+    name: "Debashrita Kundu",
+    affiliation: "PhD, University of Illinois Urbana Champaign",
+    field: "Biomaterials",
+    image: "/speakers/Debashrita.png",
+  },
+];
+const physicsSpeakers = [
+  {
+    name: "Quoc Tuan",
+    affiliation: "PhD, University of Southern California",
+    field: "Quantum Sensing and Spin Dynamics",
+    image: "/speakers/Tuan.png",
+  },
+  {
+    name: "Sagar Gowala",
+    affiliation: "PhD, IIT Bombay",
+    field: "Gravitational Wave Astronomy",
+    image: "/speakers/Sagar.png",
+  },
+  {
+    name: "Brenjit Hazarika",
+    affiliation: "PhD, IIT Tirupati",
+    field: "...",
+    image: "/speakers/Brenjit.png",
+  },
+  {
+    name: "TBD",
+    affiliation: "...",
+    field: "Condensed Matter Physics",
+    image: "/speakers/physics4.png",
+  },
+];
 export default function Home() {
   return (
     <main className="bg-slate-950 text-white">
@@ -66,7 +125,57 @@ export default function Home() {
 
         </div>
       </section>
+{/* ================= HOST ================= */}
 
+<section className="bg-slate-950 px-8 py-24">
+
+  <div className="mx-auto max-w-5xl">
+
+    <h2 className="mb-4 text-center text-5xl font-bold text-yellow-400">
+      Host
+    </h2>
+
+    <p className="mb-16 text-center text-xl text-slate-300">
+      Guiding the sessions and facilitating discussions throughout the summer school.
+    </p>
+
+    <div className="flex justify-center">
+
+      {hosts.map((host) => (
+        <div
+          key={host.name}
+          className="w-full max-w-sm overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <img
+            src={host.image}
+            alt={host.name}
+            className="h-96 w-full object-cover"
+          />
+
+          <div className="p-6 text-center">
+
+            <h3 className="text-3xl font-bold text-white">
+              {host.name}
+            </h3>
+
+            <p className="mt-2 text-yellow-400">
+              {host.affiliation}
+            </p>
+
+            <p className="mt-3 text-slate-300">
+              {host.role}
+            </p>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
       {/* ================= ABOUT ================= */}
 
       <section
@@ -136,9 +245,116 @@ export default function Home() {
 
         </div>
 
-      </section>
 
-      {/* ================= SCHEDULE ================= */}
+      </section>
+{/* ================= CHEMISTRY PANEL ================= */}
+
+<section className="bg-slate-900 px-8 py-24">
+
+  <div className="mx-auto max-w-7xl">
+
+    <h2 className="mb-4 text-center text-5xl font-bold text-yellow-400">
+      Chemistry Panel
+    </h2>
+
+    <p className="mb-16 text-center text-xl text-slate-300">
+      Distinguished researchers sharing their work and experiences.
+    </p>
+
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      {chemistrySpeakers.map((speaker) => (
+        <div
+          key={speaker.name}
+          className="overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+
+          <img
+            src={speaker.image}
+            alt={speaker.name}
+            className="h-80 w-full object-cover"
+          />
+
+          <div className="p-6">
+
+            <h3 className="text-2xl font-bold text-white">
+              {speaker.name}
+            </h3>
+
+            <p className="mt-2 text-yellow-400">
+              {speaker.affiliation}
+            </p>
+
+            <p className="mt-3 text-slate-300">
+              {speaker.field}
+            </p>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= PHYSICS PANEL ================= */}
+
+<section className="bg-slate-900 px-8 py-24">
+
+  <div className="mx-auto max-w-7xl">
+
+    <h2 className="mb-4 text-center text-5xl font-bold text-blue-400">
+      Physics Panel
+    </h2>
+
+    <p className="mb-16 text-center text-xl text-slate-300">
+      Distinguished researchers sharing their work and experiences.
+    </p>
+
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      {physicsSpeakers.map((speaker) => (
+        <div
+          key={speaker.name}
+          className="overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+
+          <img
+            src={speaker.image}
+            alt={speaker.name}
+            className="h-64 w-full object-cover"
+          />
+
+          <div className="p-6">
+
+            <h3 className="text-2xl font-bold text-white">
+              {speaker.name}
+            </h3>
+
+            <p className="mt-2 text-blue-400">
+              {speaker.affiliation}
+            </p>
+
+            <p className="mt-3 text-slate-300">
+              {speaker.field}
+            </p>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+ {/* ================= SCHEDULE ================= */}
+
 
       <section className="bg-slate-950 px-8 py-24">
 
