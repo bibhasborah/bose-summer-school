@@ -6,19 +6,25 @@ const hosts = [
     role: "Host",
     image: "/hosts/bibhas.jpg",
   },
-];
-const chemistrySpeakers = [
   {
     name: "Sumit Sahu",
     affiliation: "PhD, University of Southern California",
-    field: "Molecular Spectroscopy",
-    image: "/speakers/Sumit.png",
+    role: "Co-Host",
+    image: "/speakers/Sumit.jpeg",
+  }
+];
+const chemistrySpeakers = [
+  {
+    name: "Shashank Sahu",
+    affiliation: "PhD, University of Texas at Austin",
+    field: "Electrostatic interaction at protein-protein Interfaces",
+    image: "/speakers/Shashank.jpeg",
   },
   {
     name: "Sarang S",
     affiliation: "PhD, University of Southern California",
-    field: "Helium Nano-Droplets",
-    image: "/speakers/Sarang.png",
+    field: "Studying Carbocation in Helium nanodroplets",
+    image: "/speakers/Sarang.jpg",
   },
   {
     name: "Katyayini Mishra",
@@ -29,7 +35,7 @@ const chemistrySpeakers = [
   {
     name: "Debashrita Kundu",
     affiliation: "PhD, University of Illinois Urbana Champaign",
-    field: "Biomaterials",
+    field: "Biomaterials: Biological Synapses",
     image: "/speakers/Debashrita.png",
   },
 ];
@@ -48,7 +54,7 @@ const physicsSpeakers = [
   },
   {
     name: "Brenjit Hazarika",
-    affiliation: "PhD, IIT Tirupati",
+    affiliation: "PhD, IIT Tirupati (Founder of Curiouz)",
     field: "...",
     image: "/speakers/Brenjit.png",
   },
@@ -139,7 +145,7 @@ export default function Home() {
       Guiding the sessions and facilitating discussions throughout the summer school.
     </p>
 
-    <div className="flex justify-center">
+    <div className="flex justify-center gap-12">
 
       {hosts.map((host) => (
         <div
