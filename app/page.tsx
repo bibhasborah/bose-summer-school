@@ -55,7 +55,7 @@ const physicsSpeakers = [
   {
     name: "Brenjit Hazarika",
     affiliation: "PhD, IIT Tirupati (Founder of Curiouz)",
-    field: "...",
+    field: "ObservationaL Astrophysics and Data Analysis",
     image: "/speakers/Brenjit.png",
   },
   {
