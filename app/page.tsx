@@ -2,13 +2,13 @@ import { FaArrowRight } from "react-icons/fa";
 const hosts = [
   {
     name: "Bibhas Borah",
-    affiliation: "PhD, University of Southern California",
+    affiliation: "Graduate Student",
     role: "Host",
     image: "/hosts/bibhas.jpg",
   },
   {
     name: "Sumit Sahu",
-    affiliation: "PhD, University of Southern California",
+    affiliation: "Graduate Student",
     role: "Co-Host",
     image: "/speakers/Sumit.jpeg",
   }
@@ -16,25 +16,25 @@ const hosts = [
 const chemistrySpeakers = [
   {
     name: "Shashank Sahu",
-    affiliation: "PhD, University of Texas at Austin",
+    affiliation: "Graduate Student",
     field: "Electrostatic interaction at protein-protein Interfaces",
     image: "/speakers/Shashank.jpeg",
   },
   {
     name: "Sarang S",
-    affiliation: "PhD, University of Southern California",
+    affiliation: "Graduate Student",
     field: "Studying Carbocation in Helium nanodroplets",
     image: "/speakers/Sarang.jpg",
   },
   {
     name: "Katyayini Mishra",
-    affiliation: "PhD, Ruhr University, Germany",
+    affiliation: "Graduate Student",
     field: "Halogen and Chalcogen Bonding Based Organocatalysis",
     image: "/speakers/Katyayini.png",
   },
   {
     name: "Debashrita Kundu",
-    affiliation: "PhD, University of Illinois Urbana Champaign",
+    affiliation: "Graduate Student",
     field: "Biomaterials: Biological Synapses",
     image: "/speakers/Debashrita.png",
   },
@@ -42,25 +42,25 @@ const chemistrySpeakers = [
 const physicsSpeakers = [
   {
     name: "Quoc Tuan",
-    affiliation: "PhD, University of Southern California",
+    affiliation: "Graduate Student",
     field: "Quantum Sensing and Spin Dynamics",
     image: "/speakers/Tuan.png",
   },
   {
     name: "Sagar Gowala",
-    affiliation: "PhD, IIT Bombay",
+    affiliation: "Graduate Student",
     field: "Gravitational Wave Astronomy",
     image: "/speakers/Sagar.png",
   },
   {
     name: "Brenjit Hazarika",
-    affiliation: "PhD, IIT Tirupati (Founder of Curiouz)",
+    affiliation: "Graduate Student",
     field: "ObservationaL Astrophysics and Data Analysis",
-    image: "/speakers/Brenjit.png",
+    image: "/speakers/Brenjit.jpeg",
   },
   {
     name: "TBD",
-    affiliation: "...",
+    affiliation: "Graduate Student",
     field: "Condensed Matter Physics",
     image: "/speakers/physics4.png",
   },
