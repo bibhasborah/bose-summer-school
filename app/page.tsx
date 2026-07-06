@@ -1,14 +1,60 @@
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+
+type PersonDetailsProps = {
+  affiliation: string;
+  field: string;
+  role?: string;
+  accent: "gold" | "blue";
+};
+
+const detailStyles = {
+  gold: {
+    affiliation: "text-yellow-300",
+    divider: "border-yellow-400/40",
+    role: "bg-yellow-400/10 text-yellow-200 ring-yellow-300/20",
+  },
+  blue: {
+    affiliation: "text-sky-300",
+    divider: "border-sky-400/40",
+    role: "bg-sky-400/10 text-sky-200 ring-sky-300/20",
+  },
+};
+
+function PersonDetails({ affiliation, field, role, accent }: PersonDetailsProps) {
+  const styles = detailStyles[accent];
+
+  return (
+    <div className={`mt-5 space-y-3 border-t pt-5 ${styles.divider}`}>
+      <p className={`text-sm font-semibold leading-6 ${styles.affiliation}`}>
+        {affiliation}
+      </p>
+
+      <p className="text-base font-medium leading-7 text-slate-100">
+        {field}
+      </p>
+
+      {role ? (
+        <p className={`inline-flex rounded-full px-3 py-1 text-sm font-semibold ring-1 ${styles.role}`}>
+          {role}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
 const hosts = [
   {
     name: "Bibhas Borah",
-    affiliation: "Graduate Student",
+    affiliation: "Graduate Student, University of Southern California",
+    field: "Theoretical Chemistry",
     role: "Host",
     image: "/hosts/bibhas.jpg",
   },
   {
     name: "Sumit Sahu",
-    affiliation: "Graduate Student",
+    affiliation: "Graduate Student, University of Southern California",
+    field: "Molecular Spectroscopy",
     role: "Co-Host",
     image: "/speakers/Sumit.jpeg",
   }
@@ -16,46 +62,46 @@ const hosts = [
 const chemistrySpeakers = [
   {
     name: "Shashank Sahu",
-    affiliation: "Graduate Student",
+    affiliation: "Graduate Student, University of Texas, Austin",
     field: "Electrostatic interaction at protein-protein Interfaces",
     image: "/speakers/Shashank.jpeg",
   },
   {
     name: "Sarang S",
-    affiliation: "Graduate Student",
-    field: "Studying Carbocation in Helium nanodroplets",
+    affiliation: "Graduate Student, University of Southern California",
+    field: "Studying carbocation in Helium nanodroplets",
     image: "/speakers/Sarang.jpg",
   },
   {
     name: "Katyayini Mishra",
-    affiliation: "Graduate Student",
-    field: "Halogen and Chalcogen Bonding Based Organocatalysis",
+    affiliation: "Graduate Student, Ruhr University, Germany",
+    field: "Halogen and chalcogen bonding based organocatalysis",
     image: "/speakers/Katyayini.png",
   },
   {
     name: "Debashrita Kundu",
-    affiliation: "Graduate Student",
-    field: "Biomaterials: Biological Synapses",
+    affiliation: "Graduate Student, University of Illinois Urbana Champaign",
+    field: "Biomaterials: Biological synapses",
     image: "/speakers/Debashrita.png",
   },
 ];
 const physicsSpeakers = [
   {
     name: "Quoc Tuan",
-    affiliation: "Graduate Student",
-    field: "Quantum Sensing and Spin Dynamics",
+    affiliation: "Graduate Student, University of Southern California",
+    field: "Quantum sensing and spin dynamics",
     image: "/speakers/Tuan.png",
   },
   {
     name: "Sagar Gowala",
-    affiliation: "Graduate Student",
+    affiliation: "Graduate Student, IIT Bombay",
     field: "Gravitational Wave Astronomy",
     image: "/speakers/Sagar.png",
   },
   {
     name: "Brenjit Hazarika",
-    affiliation: "Graduate Student",
-    field: "ObservationaL Astrophysics and Data Analysis",
+    affiliation: "Graduate Student, IIT Tirupati (Founder of Curiouz)",
+    field: "Observational Astrophysics and Data Analysis",
     image: "/speakers/Brenjit.jpeg",
   },
   {
@@ -152,9 +198,12 @@ export default function Home() {
           key={host.name}
           className="w-full max-w-sm overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
         >
-          <img
+          <Image
             src={host.image}
             alt={host.name}
+            width={384}
+            height={384}
+            sizes="(min-width: 640px) 384px, 100vw"
             className="h-96 w-full object-cover"
           />
 
@@ -164,13 +213,12 @@ export default function Home() {
               {host.name}
             </h3>
 
-            <p className="mt-2 text-yellow-400">
-              {host.affiliation}
-            </p>
-
-            <p className="mt-3 text-slate-300">
-              {host.role}
-            </p>
+            <PersonDetails
+              affiliation={host.affiliation}
+              field={host.field}
+              role={host.role}
+              accent="gold"
+            />
 
           </div>
 
@@ -275,9 +323,12 @@ export default function Home() {
           className="overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
         >
 
-          <img
+          <Image
             src={speaker.image}
             alt={speaker.name}
+            width={320}
+            height={320}
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             className="h-80 w-full object-cover"
           />
 
@@ -287,13 +338,11 @@ export default function Home() {
               {speaker.name}
             </h3>
 
-            <p className="mt-2 text-yellow-400">
-              {speaker.affiliation}
-            </p>
-
-            <p className="mt-3 text-slate-300">
-              {speaker.field}
-            </p>
+            <PersonDetails
+              affiliation={speaker.affiliation}
+              field={speaker.field}
+              accent="gold"
+            />
 
           </div>
 
@@ -328,9 +377,12 @@ export default function Home() {
           className="overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
         >
 
-          <img
+          <Image
             src={speaker.image}
             alt={speaker.name}
+            width={320}
+            height={256}
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             className="h-64 w-full object-cover"
           />
 
@@ -340,13 +392,11 @@ export default function Home() {
               {speaker.name}
             </h3>
 
-            <p className="mt-2 text-blue-400">
-              {speaker.affiliation}
-            </p>
-
-            <p className="mt-3 text-slate-300">
-              {speaker.field}
-            </p>
+            <PersonDetails
+              affiliation={speaker.affiliation}
+              field={speaker.field}
+              accent="blue"
+            />
 
           </div>
 
