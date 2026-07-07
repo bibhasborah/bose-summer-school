@@ -101,7 +101,7 @@ const materialsSpeakers = [
     name: "Krishna Agrawal",
     affiliation: "Graduate Student, Indian Institute of Science",
     field: "...",
-    image: "/speakers/Krishna.jpg",
+    image: "/speakers/Krishna.jpeg",
   },
   {
     name: "TBD",
