@@ -100,7 +100,7 @@ const materialsSpeakers = [
   {
     name: "Krishna Agrawal",
     affiliation: "Graduate Student, Indian Institute of Science",
-    field: "...",
+    field: "Polymer recycling and upcycling",
     image: "/speakers/Krishna.jpeg",
   },
   {
