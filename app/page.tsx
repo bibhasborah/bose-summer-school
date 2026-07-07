@@ -5,7 +5,7 @@ type PersonDetailsProps = {
   affiliation: string;
   field: string;
   role?: string;
-  accent: "gold" | "blue";
+  accent: "gold" | "blue" | "emerald";
 };
 
 const detailStyles = {
@@ -18,6 +18,11 @@ const detailStyles = {
     affiliation: "text-sky-300",
     divider: "border-sky-400/40",
     role: "bg-sky-400/10 text-sky-200 ring-sky-300/20",
+  },
+  emerald: {
+    affiliation: "text-emerald-300",
+    divider: "border-emerald-400/40",
+    role: "bg-emerald-400/10 text-emerald-200 ring-emerald-300/20",
   },
 };
 
@@ -79,10 +84,36 @@ const chemistrySpeakers = [
     image: "/speakers/Katyayini.png",
   },
   {
+    name: "Aditya Gupta",
+    affiliation: "Graduate Student, Rice University, USA",
+    field: "Nitric oxide in tumor modulation: From discovery to therapy",
+    image: "/speakers/Aditya.png",
+  },
+];
+const materialsSpeakers = [
+  {
     name: "Debashrita Kundu",
     affiliation: "Graduate Student, University of Illinois Urbana Champaign",
     field: "Biomaterials: Biological synapses",
     image: "/speakers/Debashrita.png",
+  },
+  {
+    name: "Krishna Agrawal",
+    affiliation: "Graduate Student, Indian Institute of Science",
+    field: "...",
+    image: "/speakers/Krishna.jpg",
+  },
+  {
+    name: "TBD",
+    affiliation: "Graduate Student",
+    field: "...",
+    image: "/speakers/TBD1.png",
+  },
+  {
+    name: "TBD",
+    affiliation: "Graduate Student",
+    field: "...",
+    image: "/speakers/TBD.png",
   },
 ];
 const physicsSpeakers = [
@@ -140,12 +171,12 @@ export default function Home() {
           </h2>
 
           <p className="mt-8 text-xl text-slate-200 sm:mt-10 sm:text-2xl">
-            Frontiers in Physics & Chemistry
+            Frontiers in Physics, Chemistry and Materials Science.
           </p>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:mt-8 sm:text-lg sm:leading-8">
             An annual online summer school introducing undergraduate students
-            to modern research in Physics and Chemistry through lectures,
+            to modern research in Physics, Chemistry and Materials Science through lectures,
             discussions, and interaction with young researchers from leading
             universities around the world.
           </p>
@@ -246,7 +277,7 @@ export default function Home() {
             The S. N. Bose Summer School is an annual online initiative
             organized by PhD students and young researchers with the goal of
             introducing undergraduate students to the frontiers of modern
-            Physics and Chemistry. Through lectures, panel discussions,
+            Physics, Chemistry and Materials Science. Through lectures, panel discussions,
             career guidance sessions, and interactive Q&A, participants
             gain exposure to contemporary scientific research and
             opportunities in academia.
@@ -263,7 +294,7 @@ export default function Home() {
           Research Areas
         </h2>
 
-        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
 
           <div className="rounded-2xl bg-slate-800 p-6 shadow-lg sm:p-10">
 
@@ -297,21 +328,37 @@ export default function Home() {
 
           </div>
 
+          <div className="rounded-2xl bg-slate-800 p-6 shadow-lg sm:p-10">
+
+            <h3 className="mb-5 text-2xl font-bold text-emerald-400 sm:mb-6 sm:text-3xl">
+              Materials Science
+            </h3>
+
+            <ul className="space-y-3 text-base text-slate-300 sm:text-lg">
+              <li>Biomaterials</li>
+              <li>Nanomaterials</li>
+              <li>Energy Materials</li>
+              <li>Electronic Materials</li>
+              <li>Soft Matter</li>
+            </ul>
+
+          </div>
+
         </div>
 
 
       </section>
 {/* ================= CHEMISTRY PANEL ================= */}
 
-<section className="bg-slate-900 px-4 py-16 sm:px-8 sm:py-24">
+<section className="bg-slate-900 px-8 py-24">
 
   <div className="mx-auto max-w-7xl">
 
-    <h2 className="mb-4 text-center text-4xl font-bold text-yellow-400 sm:text-5xl">
+    <h2 className="mb-4 text-center text-5xl font-bold text-yellow-400">
       Chemistry Panel
     </h2>
 
-    <p className="mb-10 text-center text-base leading-7 text-slate-300 sm:mb-16 sm:text-xl">
+    <p className="mb-16 text-center text-xl text-slate-300">
       Distinguished researchers sharing their work and experiences.
     </p>
 
@@ -329,12 +376,12 @@ export default function Home() {
             width={320}
             height={320}
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-            className="h-72 w-full object-cover sm:h-80"
+            className="h-80 w-full object-cover"
           />
 
-          <div className="p-5 sm:p-6">
+          <div className="p-6">
 
-            <h3 className="text-xl font-bold text-white sm:text-2xl">
+            <h3 className="text-2xl font-bold text-white">
               {speaker.name}
             </h3>
 
@@ -357,15 +404,15 @@ export default function Home() {
 
 {/* ================= PHYSICS PANEL ================= */}
 
-<section className="bg-slate-900 px-4 py-16 sm:px-8 sm:py-24">
+<section className="bg-slate-900 px-8 py-24">
 
   <div className="mx-auto max-w-7xl">
 
-    <h2 className="mb-4 text-center text-4xl font-bold text-blue-400 sm:text-5xl">
+    <h2 className="mb-4 text-center text-5xl font-bold text-blue-400">
       Physics Panel
     </h2>
 
-    <p className="mb-10 text-center text-base leading-7 text-slate-300 sm:mb-16 sm:text-xl">
+    <p className="mb-16 text-center text-xl text-slate-300">
       Distinguished researchers sharing their work and experiences.
     </p>
 
@@ -383,12 +430,12 @@ export default function Home() {
             width={320}
             height={256}
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-            className="h-72 w-full object-cover sm:h-64"
+            className="h-64 w-full object-cover"
           />
 
-          <div className="p-5 sm:p-6">
+          <div className="p-6">
 
-            <h3 className="text-xl font-bold text-white sm:text-2xl">
+            <h3 className="text-2xl font-bold text-white">
               {speaker.name}
             </h3>
 
@@ -409,21 +456,75 @@ export default function Home() {
 
 </section>
 
+{/* ================= MATERIALS SCIENCE PANEL ================= */}
+
+<section className="bg-slate-900 px-8 py-24">
+
+  <div className="mx-auto max-w-7xl">
+
+    <h2 className="mb-4 text-center text-5xl font-bold text-emerald-400">
+      Materials Science Panel
+    </h2>
+
+    <p className="mb-16 text-center text-xl text-slate-300">
+      Distinguished researchers sharing their work and experiences.
+    </p>
+
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      {materialsSpeakers.map((speaker) => (
+        <div
+          key={speaker.name}
+          className="overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+
+          <Image
+            src={speaker.image}
+            alt={speaker.name}
+            width={320}
+            height={256}
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+            className="h-64 w-full object-cover"
+          />
+
+          <div className="p-6">
+
+            <h3 className="text-2xl font-bold text-white">
+              {speaker.name}
+            </h3>
+
+            <PersonDetails
+              affiliation={speaker.affiliation}
+              field={speaker.field}
+              accent="emerald"
+            />
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
  {/* ================= SCHEDULE ================= */}
 
 
-      <section className="bg-slate-950 px-4 py-16 sm:px-8 sm:py-24">
+      <section className="bg-slate-950 px-8 py-24">
 
-        <h2 className="mb-10 text-center text-4xl font-bold leading-tight text-yellow-400 sm:mb-16 sm:text-5xl">
+        <h2 className="mb-16 text-center text-5xl font-bold text-yellow-400">
           Tentative Schedule
         </h2>
 
-        <div className="mx-auto max-w-4xl rounded-2xl bg-slate-800 p-6 sm:p-10">
+        <div className="mx-auto max-w-4xl rounded-2xl bg-slate-800 p-10">
 
           <div className="space-y-8">
 
             <div>
-              <h3 className="text-xl font-bold text-yellow-400 sm:text-2xl">
+              <h3 className="text-2xl font-bold text-yellow-400">
                 Day 1
               </h3>
 
@@ -433,7 +534,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-yellow-400 sm:text-2xl">
+              <h3 className="text-2xl font-bold text-yellow-400">
                 Day 2
               </h3>
 
@@ -443,7 +544,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-yellow-400 sm:text-2xl">
+              <h3 className="text-2xl font-bold text-yellow-400">
                 Day 3
               </h3>
 
@@ -460,19 +561,19 @@ export default function Home() {
 
       {/* ================= CONTACT ================= */}
 
-      <section className="bg-slate-900 px-4 py-16 sm:px-8 sm:py-24">
+      <section className="bg-slate-900 px-8 py-24">
 
         <div className="mx-auto max-w-5xl text-center">
 
-          <h2 className="mb-6 text-4xl font-bold text-yellow-400 sm:mb-8 sm:text-5xl">
+          <h2 className="mb-8 text-5xl font-bold text-yellow-400">
             Contact
           </h2>
 
-          <p className="text-lg text-slate-300 sm:text-xl">
+          <p className="text-xl text-slate-300">
             Email:
           </p>
 
-          <p className="mt-3 break-words text-xl font-semibold text-yellow-400 sm:text-2xl">
+          <p className="mt-3 text-2xl font-semibold text-yellow-400">
             bosesummerschool@gmail.com
           </p>
 
@@ -482,7 +583,7 @@ export default function Home() {
 
       {/* ================= FOOTER ================= */}
 
-      <footer className="bg-black px-4 py-8 text-center text-sm text-slate-500 sm:py-10 sm:text-base">
+      <footer className="bg-black py-10 text-center text-slate-500">
 
         © 2026 S. N. Bose Summer School
 
