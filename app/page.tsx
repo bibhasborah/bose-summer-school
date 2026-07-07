@@ -359,7 +359,7 @@ export default function Home() {
     </h2>
 
     <p className="mb-16 text-center text-xl text-slate-300">
-      Distinguished researchers sharing their work and experiences.
+      Young researchers sharing their work and academic experiences.
     </p>
 
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -413,7 +413,7 @@ export default function Home() {
     </h2>
 
     <p className="mb-16 text-center text-xl text-slate-300">
-      Distinguished researchers sharing their work and experiences.
+      Young researchers sharing their work and academic experiences.
     </p>
 
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -467,7 +467,7 @@ export default function Home() {
     </h2>
 
     <p className="mb-16 text-center text-xl text-slate-300">
-      Distinguished researchers sharing their work and experiences.
+      Young researchers sharing their work and academic experiences.
     </p>
 
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
