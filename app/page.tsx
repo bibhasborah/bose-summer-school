@@ -118,10 +118,10 @@ const materialsSpeakers = [
 ];
 const physicsSpeakers = [
   {
-    name: "Quoc Tuan",
+    name: "Hriday Sabharwal",
     affiliation: "Graduate Student, University of Southern California",
-    field: "Quantum sensing and spin dynamics",
-    image: "/speakers/Tuan.png",
+    field: "Quantum Computing",
+    image: "/speakers/Hriday.png",
   },
   {
     name: "Sagar Gowala",
@@ -136,10 +136,10 @@ const physicsSpeakers = [
     image: "/speakers/Brenjit.jpeg",
   },
   {
-    name: "TBD",
+    name: "Quoc Tuan",
     affiliation: "Graduate Student",
-    field: "Condensed Matter Physics",
-    image: "/speakers/physics4.png",
+    field: "...",
+    image: "/speakers/Tuan.png",
   },
 ];
 export default function Home() {
