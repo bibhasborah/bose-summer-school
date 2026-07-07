@@ -58,8 +58,8 @@ const hosts = [
   },
   {
     name: "Sumit Sahu",
-    affiliation: "Graduate Student, University of Southern California",
-    field: "Molecular Spectroscopy",
+    affiliation: "PhD Candidate, University of Southern California",
+    field: "Molecular Spectroscopy and Electrochemistry",
     role: "Co-Host",
     image: "/speakers/Sumit.jpeg",
   }
