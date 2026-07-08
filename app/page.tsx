@@ -104,13 +104,13 @@ const materialsSpeakers = [
     image: "/speakers/Krishna.jpeg",
   },
   {
-    name: "TBD",
+    name: "TBA",
     affiliation: "Graduate Student",
     field: "...",
     image: "/speakers/TBD1.png",
   },
   {
-    name: "TBD",
+    name: "TBA",
     affiliation: "Graduate Student",
     field: "...",
     image: "/speakers/TBD.png",
@@ -529,7 +529,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                TBD
+                TBA
               </p>
             </div>
 
@@ -539,7 +539,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                TBD
+                TBA
               </p>
             </div>
 
@@ -549,7 +549,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                TBD
+                TBA
               </p>
             </div>
 
