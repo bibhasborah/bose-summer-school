@@ -121,7 +121,7 @@ const physicsSpeakers = [
     name: "Hriday Sabharwal",
     affiliation: "Graduate Student, University of Southern California",
     field: "Quantum Computing",
-    image: "/speakers/Hriday.png",
+    image: "/speakers/Hriday.jpeg",
   },
   {
     name: "Sagar Gowala",
