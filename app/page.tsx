@@ -137,7 +137,7 @@ const physicsSpeakers = [
   },
   {
     name: "Quoc Tuan",
-    affiliation: "Graduate Student",
+    affiliation: "Graduate Student, University of Southern California",
     field: "Quantum Materials and Quantum Sensing",
     image: "/speakers/Tuan.png",
   },
