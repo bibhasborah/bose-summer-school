@@ -138,7 +138,7 @@ const physicsSpeakers = [
   {
     name: "Quoc Tuan",
     affiliation: "Graduate Student",
-    field: "Quantum materals and quantum sensing",
+    field: "Quantum Materials and Quantum Sensing",
     image: "/speakers/Tuan.png",
   },
 ];
