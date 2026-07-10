@@ -118,7 +118,7 @@ const materialsSpeakers = [
 ];
 const physicsSpeakers = [
   {
-    name: "Harshwardhan Singh Deora",
+    name: "Harshvardhan Singh Deora",
     affiliation: "Graduate Student, Cornell University",
     field: "Machine Learning Interatomic Potentials for Molecular Dynamics Simulations",
     image: "/speakers/Harshwardhan.jpeg",
