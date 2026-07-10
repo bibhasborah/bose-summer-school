@@ -104,10 +104,10 @@ const materialsSpeakers = [
     image: "/speakers/Krishna.jpeg",
   },
   {
-    name: "TBA",
-    affiliation: "Graduate Student",
-    field: "...",
-    image: "/speakers/TBD1.png",
+    name: "Bhawna Choudhary",
+    affiliation: "Graduate Student, University of Groningen, Netherlands",
+    field: "Degradation in Organic Redox Flow Batteries",
+    image: "/speakers/Bhawna.jpg",
   },
   {
     name: "TBA",
