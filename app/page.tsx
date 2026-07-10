@@ -142,6 +142,22 @@ const physicsSpeakers = [
     image: "/speakers/Brenjit.jpeg",
   },
 ];
+const technicalTeam = [
+  {
+    name: "Bibhas Borah",
+    affiliation: "Graduate Student, University of Southern California",
+    field: "Website and technical coordination",
+    role: "Technical Team",
+    image: "/hosts/bibhas.jpg",
+  },
+  {
+    name: "Brenjit Hazarika",
+    affiliation: "Graduate Student, IIT Tirupati (Founder of Curiouz)",
+    field: "Technical support and outreach",
+    role: "Technical Team",
+    image: "/speakers/Brenjit.jpeg",
+  },
+];
 export default function Home() {
   return (
     <main className="overflow-x-hidden bg-slate-950 text-white">
@@ -552,6 +568,60 @@ export default function Home() {
                 TBA
               </p>
             </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= TECHNICAL TEAM ================= */}
+
+      <section className="bg-slate-900 px-4 py-16 sm:px-8 sm:py-24">
+
+        <div className="mx-auto max-w-5xl">
+
+          <h2 className="mb-4 text-center text-4xl font-bold text-blue-400 sm:text-5xl">
+            Technical Team
+          </h2>
+
+          <p className="mb-10 text-center text-base leading-7 text-slate-300 sm:mb-16 sm:text-xl">
+            Supporting the website, technical setup, and online coordination.
+          </p>
+
+          <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:gap-12">
+
+            {technicalTeam.map((member) => (
+              <div
+                key={member.name}
+                className="w-full max-w-sm overflow-hidden rounded-2xl bg-slate-800 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={384}
+                  height={384}
+                  sizes="(min-width: 640px) 384px, 100vw"
+                  className="h-80 w-full object-cover sm:h-96"
+                />
+
+                <div className="p-5 text-center sm:p-6">
+
+                  <h3 className="text-2xl font-bold text-white sm:text-3xl">
+                    {member.name}
+                  </h3>
+
+                  <PersonDetails
+                    affiliation={member.affiliation}
+                    field={member.field}
+                    role={member.role}
+                    accent="blue"
+                  />
+
+                </div>
+
+              </div>
+            ))}
 
           </div>
 
