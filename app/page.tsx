@@ -110,13 +110,19 @@ const materialsSpeakers = [
     image: "/speakers/Bhawna.jpg",
   },
   {
-    name: "TBA",
-    affiliation: "Graduate Student",
-    field: "...",
-    image: "/speakers/TBD.png",
+    name: "Quoc Tuan",
+    affiliation: "Graduate Student, University of Southern California",
+    field: "Quantum Materials and Quantum Sensing",
+    image: "/speakers/Tuan.png",
   },
 ];
 const physicsSpeakers = [
+  {
+    name: "Harshwardhan Singh Deora",
+    affiliation: "Graduate Student, Cornell University",
+    field: "Machine Learning Interatomic Potentials for Molecular Dynamics Simulations",
+    image: "/speakers/Harshwardhan.jpeg",
+  },
   {
     name: "Hriday Sabharwal",
     affiliation: "Graduate Student, University of Southern California",
@@ -134,12 +140,6 @@ const physicsSpeakers = [
     affiliation: "Graduate Student, IIT Tirupati (Founder of Curiouz)",
     field: "Observational Astrophysics and Data Analysis",
     image: "/speakers/Brenjit.jpeg",
-  },
-  {
-    name: "Quoc Tuan",
-    affiliation: "Graduate Student, University of Southern California",
-    field: "Quantum Materials and Quantum Sensing",
-    image: "/speakers/Tuan.png",
   },
 ];
 export default function Home() {
