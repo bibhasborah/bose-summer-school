@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaInstagram } from "react-icons/fa";
 
 type PersonDetailsProps = {
   affiliation: string;
@@ -624,6 +624,60 @@ export default function Home() {
             ))}
 
           </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= INSTAGRAM ================= */}
+
+      <section className="bg-slate-950 px-4 py-16 sm:px-8 sm:py-24">
+
+        <div className="mx-auto grid max-w-5xl items-center gap-10 rounded-3xl bg-slate-800 p-6 shadow-2xl sm:p-10 md:grid-cols-2 md:gap-14">
+
+          <div className="text-center md:text-left">
+
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-pink-400">
+              Stay Connected
+            </p>
+
+            <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl">
+              Follow us on Instagram
+            </h2>
+
+            <p className="mt-5 text-base leading-7 text-slate-300 sm:text-lg">
+              Get the latest summer school announcements, speaker updates, and
+              event highlights from @bose_summerschool.
+            </p>
+
+            <a
+              href="https://www.instagram.com/bose_summerschool/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 px-7 py-4 text-base font-semibold text-white transition hover:scale-105 hover:shadow-lg hover:shadow-pink-500/20 sm:text-lg"
+            >
+              <FaInstagram className="text-2xl" aria-hidden="true" />
+              @bose_summerschool
+            </a>
+
+          </div>
+
+          <a
+            href="https://www.instagram.com/bose_summerschool/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit the S. N. Bose Summer School Instagram page"
+            className="mx-auto block w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-xl transition hover:scale-[1.02]"
+          >
+            <Image
+              src="/Insta_Page.jpg"
+              alt="Instagram QR code for @bose_summerschool"
+              width={681}
+              height={689}
+              sizes="(min-width: 768px) 384px, 100vw"
+              className="h-auto w-full"
+            />
+          </a>
 
         </div>
 
