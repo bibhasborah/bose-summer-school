@@ -153,7 +153,7 @@ const technicalTeam = [
   {
     name: "Brenjit Hazarika",
     affiliation: "Graduate Student, IIT Tirupati (Founder of Curiouz)",
-    field: "Technical support and outreach",
+    field: "Technical support",
     role: "Technical Team",
     image: "/speakers/Brenjit.jpeg",
   },
