@@ -337,7 +337,7 @@ export default function Home() {
               <li>Physical Spectroscopy</li>
               <li>Organic Chemistry</li>
               <li>Biophysical Chemistry</li>
-              <li>MedicinalChemistry</li>
+              <li>Medicinal Chemistry</li>
             </ul>
 
           </div>
