@@ -526,6 +526,38 @@ export default function Home() {
 
 </section>
 
+{/* ================= STUDENT COMPETITION ================= */}
+
+<section className="bg-slate-950 px-4 py-16 sm:px-8 sm:py-24">
+  <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-yellow-400/30 bg-slate-800 p-6 shadow-2xl sm:p-10 md:p-14">
+    <div className="grid items-center gap-8 md:grid-cols-[1fr_auto] md:gap-12">
+      <div>
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-300">
+          Student Competition
+        </p>
+
+        <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl">
+          Live Research Pitch
+        </h2>
+
+        <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+          Put your scientific thinking and communication skills to the test in
+          a live research pitch alongside fellow students.
+        </p>
+      </div>
+
+      <div className="rounded-2xl bg-yellow-400/10 px-6 py-5 text-center ring-1 ring-yellow-300/30 md:max-w-xs">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-300">
+          Topic Reveal
+        </p>
+        <p className="mt-2 text-lg font-bold leading-7 text-white">
+          The topic will be announced on the final day.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
  {/* ================= SCHEDULE ================= */}
 
 
