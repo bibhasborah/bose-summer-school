@@ -322,8 +322,7 @@ export default function Home() {
               <li>Quantum Mechanics</li>
               <li>Condensed Matter Physics</li>
               <li>Astrophysics</li>
-              <li>Particle Physics</li>
-              <li>Optics & Photonics</li>
+              <li>Machine Learning</li>
             </ul>
 
           </div>
@@ -335,11 +334,10 @@ export default function Home() {
             </h3>
 
             <ul className="space-y-3 text-base text-slate-600 sm:text-lg">
-              <li>Physical Chemistry</li>
+              <li>Physical Spectroscopy</li>
               <li>Organic Chemistry</li>
-              <li>Computational Chemistry</li>
-              <li>Materials Chemistry</li>
-              <li>Spectroscopy</li>
+              <li>Biophysical Chemistry</li>
+              <li>MedicinalChemistry</li>
             </ul>
 
           </div>
@@ -352,10 +350,9 @@ export default function Home() {
 
             <ul className="space-y-3 text-base text-slate-600 sm:text-lg">
               <li>Biomaterials</li>
-              <li>Nanomaterials</li>
-              <li>Energy Materials</li>
-              <li>Electronic Materials</li>
-              <li>Soft Matter</li>
+              <li>Organic materials</li>
+              <li>Quantum Materials</li>
+              <li>Polymer Materials</li>
             </ul>
 
           </div>
