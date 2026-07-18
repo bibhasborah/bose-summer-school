@@ -320,7 +320,7 @@ export default function Home() {
 
             <ul className="space-y-3 text-base text-slate-600 sm:text-lg">
               <li>Quantum Mechanics</li>
-              <li>Condensed Matter Physics</li>
+              <li>Theoretical Physics</li>
               <li>Astrophysics</li>
               <li>Machine Learning</li>
             </ul>
