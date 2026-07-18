@@ -526,38 +526,6 @@ export default function Home() {
 
 </section>
 
-{/* ================= STUDENT COMPETITION ================= */}
-
-<section className="bg-white px-4 py-16 sm:px-8 sm:py-24">
-  <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-yellow-400/30 bg-amber-50 p-6 shadow-xl sm:p-10 md:p-14">
-    <div className="grid items-center gap-8 md:grid-cols-[1fr_auto] md:gap-12">
-      <div>
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-700">
-          Student Competition
-        </p>
-
-        <h2 className="text-4xl font-bold leading-tight text-slate-950 sm:text-5xl">
-          Live Research Pitch
-        </h2>
-
-        <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-          Put your scientific thinking and communication skills to the test in
-          a live research pitch alongside fellow students.
-        </p>
-      </div>
-
-      <div className="rounded-2xl bg-yellow-400/10 px-6 py-5 text-center ring-1 ring-yellow-300/30 md:max-w-xs">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">
-          Topic Reveal
-        </p>
-        <p className="mt-2 text-lg font-bold leading-7 text-slate-950">
-          The topic will be announced on the final day.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
  {/* ================= SCHEDULE ================= */}
 
 
@@ -663,21 +631,21 @@ export default function Home() {
 
       {/* ================= INSTAGRAM ================= */}
 
-      <section className="bg-white px-4 py-16 sm:px-8 sm:py-24">
+      <section className="bg-white px-4 py-10 sm:px-8 sm:py-14">
 
-        <div className="mx-auto grid max-w-5xl items-center gap-10 rounded-3xl bg-slate-50 p-6 shadow-xl sm:p-10 md:grid-cols-2 md:gap-14">
+        <div className="mx-auto grid max-w-3xl items-center gap-6 rounded-2xl bg-slate-50 p-5 shadow-lg sm:p-7 md:grid-cols-2 md:gap-8">
 
           <div className="text-center md:text-left">
 
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-pink-600">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-pink-600">
               Stay Connected
             </p>
 
-            <h2 className="text-4xl font-bold leading-tight text-slate-950 sm:text-5xl">
+            <h2 className="text-3xl font-bold leading-tight text-slate-950">
               Follow us on Instagram
             </h2>
 
-            <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg">
+            <p className="mt-3 text-sm leading-6 text-slate-600">
               Get the latest summer school announcements, speaker updates, and
               event highlights from @bose_summerschool.
             </p>
@@ -686,9 +654,9 @@ export default function Home() {
               href="https://www.instagram.com/bose_summerschool/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 px-7 py-4 text-base font-semibold text-white transition hover:scale-105 hover:shadow-lg hover:shadow-pink-500/20 sm:text-lg"
+              className="mt-5 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 px-5 py-3 text-sm font-semibold text-white transition hover:scale-105 hover:shadow-lg hover:shadow-pink-500/20"
             >
-              <FaInstagram className="text-2xl" aria-hidden="true" />
+              <FaInstagram className="text-xl" aria-hidden="true" />
               @bose_summerschool
             </a>
 
@@ -699,14 +667,14 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit the S. N. Bose Summer School Instagram page"
-            className="mx-auto block w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-xl transition hover:scale-[1.02]"
+            className="mx-auto block w-full max-w-52 overflow-hidden rounded-xl bg-white shadow-lg transition hover:scale-[1.02]"
           >
             <Image
               src="/Insta_Page.jpg"
               alt="Instagram QR code for @bose_summerschool"
               width={681}
               height={689}
-              sizes="(min-width: 768px) 384px, 100vw"
+              sizes="208px"
               className="h-auto w-full"
             />
           </a>
