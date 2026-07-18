@@ -78,10 +78,10 @@ const chemistrySpeakers = [
     image: "/speakers/Sarang.jpg",
   },
   {
-    name: "Katyayini Mishra",
+    name: "Katyayani Mishra",
     affiliation: "Graduate Student, Ruhr University, Germany",
     field: "Halogen and chalcogen bonding based organocatalysis",
-    image: "/speakers/Katyayini.png",
+    image: "/speakers/Katyayani.png",
   },
   {
     name: "Aditya Gupta",
