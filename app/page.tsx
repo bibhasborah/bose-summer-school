@@ -219,7 +219,7 @@ export default function Home() {
           </div>
 
           <p className="mt-10 text-sm text-slate-200 sm:mt-12 sm:text-base">
-            August 2026 • Online • Free Registration
+            28–30 August 2026 • Online • Free Registration
           </p>
 
         </div>
